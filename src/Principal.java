@@ -10,8 +10,6 @@ import java.util.Scanner;
 public class Principal {
     public static void main(String[] args) throws IOException, InterruptedException {
 
-        // "https://v6.exchangerate-api.com/v6/b02a088d88862bdb1c42edab/pair/"+divisaOrigen+"/"+divisaDestino+"/"+cantidad
-        //  "https://v6.exchangerate-api.com/v6/b02a088d88862bdb1c42edab/latest/USD"
 
         Busqueda busqueda = new Busqueda();
 
@@ -26,8 +24,6 @@ public class Principal {
                 *********************************************
                 """);
         busqueda.setDivisaOrigen(lectura.nextLine());
-        System.out.println(busqueda.getDivisaOrigen());
-
 
         System.out.println("""
                 ********************************************
@@ -39,7 +35,6 @@ public class Principal {
                 *********************************************
                 """);
         busqueda.setDivisaDestino(lectura.nextLine());
-        System.out.println(busqueda.getDivisaDestino());
 
         System.out.println("""
                 ********************************************
@@ -47,7 +42,6 @@ public class Principal {
                 *********************************************
                 """);
         busqueda.setCantidad(lectura.nextInt());
-        System.out.println(busqueda.getCantidad());
 
         System.out.println("su moneda origen es " + busqueda.getDivisaOrigen() + " y va a convertir " + busqueda.getCantidad() + " a " + busqueda.getDivisaDestino());
 
